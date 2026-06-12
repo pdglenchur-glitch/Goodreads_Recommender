@@ -1,0 +1,13 @@
+# --- Secrets: NEVER commit these ---
+.streamlit/secrets.toml
+.env
+*.key
+
+# --- Python ---
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# --- OS / editor noise ---
+.DS_Store
+.vscode/

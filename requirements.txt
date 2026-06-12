@@ -1,0 +1,5 @@
+streamlit
+pandas
+numpy<2
+scikit-surprise
+google-generativeai
