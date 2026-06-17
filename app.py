@@ -188,7 +188,7 @@ def llm_rerank(candidates_df, user_preference, api_key):
 def get_configured_key():
     try:
         if "GEMINI_API_KEY" in st.secrets:
-            return st.secrets["GEMINI_API_KEY"] # type: ignore
+            return st.secrets["GEMINI_API_KEY"]
     except Exception:
         pass
     return os.environ.get("GEMINI_API_KEY", "")
@@ -343,3 +343,4 @@ if st.button("Re-rank with AI", type="primary"):
                         )
             except Exception as e:
                 st.error(f"LLM error: {e}")
+
